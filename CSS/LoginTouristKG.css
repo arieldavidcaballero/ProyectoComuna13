@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor General */
+.containerLogin{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url("/image/Fondo\ Turista\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container Uno*/
+.containerOne {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.containerOne img {
+    width: 270px;
+    height: auto;
+}
+
+.containerOne .buttonBack {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Container Dos*/
+.containerTwo {
+    width: 100vw;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.buttonStore {
+    width: 120px;
+    height: auto;
+    padding-right: 10px;
+}
+
+/* Container Tres*/
+.containerTree {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+/* Container Cuatro*/
+.containerFour {
+    width: 100vw;
+    height: 18vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
