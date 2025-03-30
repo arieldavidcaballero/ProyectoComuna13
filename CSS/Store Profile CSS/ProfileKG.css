@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerProfileT { /* Contenedor General */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url("/image/Fondo\ Perfil\ Tienda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerOne { /* Contenedor Uno */
+    width: 100vw;
+    height: 13.5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.containerTwo { /* Container Dos */
+    width: 60vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTwo img {
+    width: 240px;
+    height: auto;
+}
+
+.containerTree { /* Container Tres */
+    width: 40vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBack {
+    width: 50px;
+    height: auto;
+}
+
+.containerFour { /* Container Cuatro */
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerFive { /* Container Cinco */
+    width: 87vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+@font-face { /* Ruta del archivo */
+    font-family: 'Dingos Stamp';
+    src: url('/fonts/DingosStamp.ttf') format('truetype');
+}
+
+.containerFive h2 {
+    color: #ffffff; 
+    font-family: 'Dingos Stamp', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.containerSix { /* Container Seis */
+    width: 87vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.FotoT1 {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; 
+}
+
+.MenuT1 {
+    width: 118px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; 
+}
+
+.containerSixZero { /* Contenerdo Seis Cero */
+    width: 50vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSixOne { /* Contenerdo Seis Uno */
+    width: 38vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSeven { /* Container Siete */
+    width: 87vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerSeven h2 {
+    color: #ffffff;
+    font-family: 'Dingos Stamp', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.containerSevenZero { /* Contenerdo Siete Cero */
+    width: 49vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerSevenOne { /* Contenerdo Siete Uno */
+    width: 38vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerEight { /* Container Ocho */
+    width: 87vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerEight h2 {
+    color: #ffffff;
+    font-family: 'Dingos Stamp', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.containerEightZero { /* Container Ocho Cero */
+    width: 49vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.containerEightOne { /* Container Ocho Uno */
+    width: 38vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerNine { /* Container Nueve */
+    width: 87vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+}
+
+.GoogleMaps {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; 
+}
+
+.containerTen { /* Container Diez */
+    width: 87vw;
+    height: 7.8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTenZero { /* Contenerdo Diez Cero */
+    width: 40vw;
+    height: 7.8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTenOne { /* Contenerdo Diez Uno */
+    width: 49vw;
+    height: 7.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTenOne img {
+    width: 40px;
+    height: auto;
+    padding-left: 5px;
+}
