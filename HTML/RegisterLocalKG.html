@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/RegisterLocalKG.css">
+    <title>Registrar-Local-KomunaGo</title>
+</head>
+<body>
+    <div class="containerRegisterLocal">
+        <!--Contenerdo Uno-->
+        <div class="containerOne"> 
+            <a href="/HTML/LoginStoreKG.html"> <img class="buttonBack" src="/image/Atras.png"  alt="button Back"> </a>
+        </div>
+        <!--Contenerdo Dos-->
+        <div class="containerTwo">
+            <img class="LogoKomunaGO" src="/image/Logo KomunaGO.png" alt="Logo KomunaGO">
+            <img class="LogoTienda" src="/image/Logo Tienda.jpg" alt="Logo Tienda">
+        </div>
+        <!-- Contenedor Tres -->
+        <div class="containerTree"> 
+            <div class="containerTreeZore">
+                <input class="inputEnter" type="text" required name="Nombre Local" placeholder="NombreLocal">
+            </div>
+            <div class="containerTreeOne">
+                <input class="inputEnter" type="text" required name="Correo Electrónico" placeholder="CorreoElectronico">
+            </div>
+            <div class="containerTreeTwo">
+                <input class="inputEnter" type="text" required name="Categoria Local" placeholder="CategoriaLocal">
+            </div>
+        </div>
+        <!--Contenerdo Cuatro-->
+        <div class="containerFour">
+            <a href=""><button class="RegisterLocal">REGISTRAR LOCAL</button> </a>
+        </div>
+        <!-- Contenedor Cinco -->
+        <div class="containerFive">
+            <a href="#" onclick="helpMessage()"> <h3>Ayuda</h3> </a>
+        </div>
+        <!-- Script para el mensaje -->
+        <script>
+            function helpMessage() {
+                alert("Para registrarte, sigue estos pasos:\n\n" +
+                      "1️⃣ Ingresa el nombre del local.\n" +
+                      "2️⃣ Introduce tu correo electrónico (sirve para recuperar tu código si lo pierdes).\n" +
+                      "3️⃣ Selecciona la categoría del local (solo puedes elegir entre las opciones disponibles).");
+            }
+        </script>
+    </div>
+</body>
+</html>

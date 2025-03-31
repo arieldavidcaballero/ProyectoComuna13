@@ -49,3 +49,14 @@
     height: auto;
     margin: 40px;
 }
+
+.buttonImg { /* Efecto para imágenes y botones */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.buttonImg:hover { /* Efecto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta el tamaño */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brillo alrededor */
+}
+.buttonImg:active { /* Efecto de clic */
+    transform: scale(0.95); /* Efecto de presión */
+}

@@ -217,3 +217,13 @@
     height: auto;
     padding-left: 5px;
 }
+
+img { /* Efecto para imágenes y botones */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover { /* Efecto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta el tamaño */
+}
+img:active { /* Efecto de clic */
+    transform: scale(0.95); /* Efecto de presión */
+}
