@@ -13,20 +13,39 @@
             <img src="/image/Logo KomunaGO.png" alt="Logo KomunaGO">
             <a href="StartKG.html"> <img class="buttonBack" src="/image/Back.png"  alt="button Back"> </a>
         </div>
-        <!--Contenerdo Dos-->
+        <!--Contenedor Dos-->
         <div class="containerTwo">
-            <a href="Store Profile HTML/ProfileKG1.html"> <img class="buttonStore" src="/image/B1.jpg"  alt="button Store"> </a>
-            <a href="Store Profile HTML/ProfileKG2.html"> <img class="buttonStore" src="/image/B2.jpg"  alt="button Store"> </a>
-            <a href="Store Profile HTML/ProfileKG3.html"> <img class="buttonStore" src="/image/B3.jpg"  alt="button Store"> </a>
+            <!-- Línea recta discontinua -->
+            <svg class="pathLines" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,60 L1200,60" stroke="#FF0000" stroke-width="6" stroke-dasharray="10,15" fill="none" />
+            </svg>
         </div>
         <!--Contenerdo Tres-->
         <div class="containerTree">
-            <a href="Store Profile HTML/ProfileKG4.html"> <img class="buttonStore" src="/image/B4.jpg"  alt="button Store"> </a>
-            <a href="Store Profile HTML/ProfileKG5.html"> <img class="buttonStore" src="/image/B5.jpg"  alt="button Store"> </a>
-            <a href="Store Profile HTML/ProfileKG6.html"> <img class="buttonStore" src="/image/B6.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B1.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B2.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B3.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B4.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B5.jpg"  alt="button Store"> </a>
+            <a href="ProfilesKG.html"> <img class="buttonStore" src="/image/B6.jpg"  alt="button Store"> </a>
         </div>
         <!--Contenerdo Cuatro-->
-        <div class="containerFour"></div>
+        <div class="containerFour">
+            <button class="btnFilter restaurante"><span>RESTAURANTE</span></button>
+            <button class="btnFilter mirador"><span>MIRADOR</span></button>
+            <button class="btnFilter cocteleria"><span>COCTELERIA</span></button>
+            <button class="btnFilter manualidades"><span>MANUALIDADES</span></button>
+            <button class="btnFilter todo active"><span>TODO</span></button>
+            <script>
+                const buttons = document.querySelectorAll('.btnFilter');
+                    buttons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                    });
+                });
+            </script>
+        </div>
     </div>
 </body>
 </html>

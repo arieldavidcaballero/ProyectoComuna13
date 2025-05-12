@@ -8,31 +8,54 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    background-image: url("/image/Fondo\ Registrar\ Tienda.jpg");
+    background-image: url("/image/Fondo\ Inicios2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+@keyframes glowBorder {
+    0% {
+        box-shadow: 0 0 5px white;
+    }
+    50% {
+        box-shadow: 0 0 20px white, 0 0 30px white;
+    }
+    100% {
+        box-shadow: 0 0 5px white;
+    }
+}
+
+.ContainerChart {
+    width: 40vw;
+    height: 90vh;
+    background-color: rgb(0, 0, 0);
+    border: 10px dashed white;
+    border-radius: 5%;
+    animation: glowBorder 2s infinite ease-in-out;
+}
+
+
 .containerOne { /* Contenedor Uno */
-    width: 87vw;
+    width: 40vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
     display: flex;
     align-items: center;
-    margin-top: 42px;
 }
 
 .buttonBack {
     width: 50px;
     height: auto;
+    margin-left: 10px;
 }
 
 .containerTwo { /* Contenerdo Dos */
-    width: 87vw;
+    width: 40vw;
     height: 12.5vh;
     display: flex;
     justify-content: center;
@@ -40,17 +63,17 @@
 }
 
 .LogoKomunaGO {
-    width: 240px;
+    width: 300px;
     height: auto;
 }
 
 .LogoTienda {
-    width: 60px;
+    width: 70px;
     height: auto;
 }
 
 .containerTree { /* Contenerdo Tres */
-    width: 87vw;
+    width: 40vw;
     height: 45vh;
     display: flex;
     align-items: center;
@@ -59,7 +82,7 @@
 }
 
 .containerTreeZore { /* Contenedor Tres Cero */
-    width: 87vw; 
+    width: 40vw; 
     height: 12vh;
     display: flex;
     justify-content: center;
@@ -67,7 +90,7 @@
 }
 
 .containerTreeOne { /* Contenedor Tres Uno */
-    width: 87vw;
+    width: 40vw;
     height: 12vh;
     display: flex;
     justify-content: center;
@@ -75,7 +98,7 @@
 }
 
 .containerTreeTwo { /* Contenedor Tres Dos */
-    width: 87vw;
+    width: 40vw;
     height: 12vh;
     display: flex;
     justify-content: center;
@@ -85,10 +108,10 @@
 .inputEnter {
     background-color: black;
     color: white;
-    border: 4px dashed white;
+    border: 4px solid white; /* cambia dashed por solid */
     border-radius: 25px;
     padding: 10px 10px;
-    font-size: 19px;
+    font-size: 25px;
     outline: none;
 }
 
@@ -103,7 +126,7 @@
 }
 
 .containerFour { /* Contenedor Cuatro */
-    width: 87vw;
+    width: 40vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -135,7 +158,7 @@
 }
 
 .containerFive { /* Contenedor Cinco */
-    width: 87vw;
+    width: 40vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -145,7 +168,7 @@
 .containerFive h3 {
     color: #ffffff; 
     font-family: 'Dingos Stamp', sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 100;
     text-decoration: underline;
 }

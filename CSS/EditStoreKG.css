@@ -1,37 +1,139 @@
-*{
+* { /* Reset General */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.containerEditStore { /* Contenedor General */
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-image: url("/image/6.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+body { /* Contenedor General */
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.containerEditStore { /* Contenedor Principal Edit Store */
     display: flex;
-    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.boxLeft, .boxRight { /* Columnas Izquierda y Derecha */
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
-.containerOne { /* Container Uno*/
-    width: 100vw;
-    height: 12vh;
+.containesOne img.logoKomuna { /* Contenedor Logo */
+    width: 500px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.inputName {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0; /* Sin bordes redondeados */
+}
+
+.inputName::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.socialInput {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+}
+
+.containerEight h2 a.mapLink {
+    color: white;
+    text-decoration: underline;
+}
+
+.containerNine .buttonBack {
+    width: 130px;
+    cursor: pointer;
+}
+
+.containerTen .storePhoto { /* Imagen del Local */
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+.containerEleven .MenuT1 { /* Imagen del Menú */
+    width: 100%;
+    max-width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.containerTwelve { /* Redes Sociales */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialItem {
+    display: flex;
     align-items: center;
+    gap: 1rem;
+}
+
+.socialItem img {
+    width: 30px;
+    height: 30px;
+}
+
+.socialItem .socialInput {
+    flex-grow: 1;
+}
+
+.containerPhotoMenu { /* Contenedor Foto y Menú Lado a Lado */
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.containerOne img {
-    width: 270px;
-    height: auto;
+.containerTen,
+.containerEleven { /* Estilo de Foto y Menú Individual */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
 }
 
-.containerOne .buttonBack {
-    width: 100px;
-    height: auto;
-    margin-left: 15px;
+@media (max-width: 768px) { /* Responsive */
+    .containerEditStore {
+        flex-direction: column;
+    }
+
+    .boxLeft, .boxRight {
+        width: 100%;
+    }
+
+    .containerTen .storePhoto,
+    .containerEleven .MenuT1 {
+        max-width: 100%;
+    }
 }
